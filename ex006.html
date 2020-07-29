@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background-color: rgb(36, 7, 139);
+            color: rgb(41, 149, 212);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- desta forma dispara os eventos pelo HTML 
+    <div id = "area" onclick = 'clicar()' onmouseenter='entrar()' onmouseout="sair()">
+        Interaja...
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        function clicar() {   
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+        } 
+    </script> -->
+
+    <!-- Desse jeito dispara os eventos pelo JS e nao deixa o HTML tão poluído-->
+    <div id = 'area'>
+        Interaja...
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+            a.style.background = 'pink'
+        }
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+        }
+    </script>
+
+</body>
+</html>

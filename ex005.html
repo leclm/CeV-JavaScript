@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos</title>
+    <style>
+        body {
+            background-color: cadetblue;
+            font: italic 11pt Arial;
+            color: rgb(5, 5, 71);
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os Estudos com DOM...</h1>
+    <p name='r'>Aqui vai o resultado</p>
+    <p class="titulo">Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        // seleciona a primeira ocorrencia do elemento <p>.
+        var p1 = window.document.getElementsByTagName('p')[1] 
+        
+        // mostra o txt dentro do elemento selecionado. Não mostra a formatação, não pega as FILHAS. Por ex, negrito.
+        window.document.write(p1.innerText + '</br>')
+        
+        // com innerHTML puxa a formatação tbm. PEGA AS FILHAS
+        window.document.write(p1.innerHTML + '</br>')
+        
+        // mostra um alerta do paragrafo com a tag strong
+        //window.alert(p1.innerHTML)
+
+        // Posso mudar a cor do texto diretamente no JS
+        p1.style.color = 'red'
+        
+        // crio uma variável do body da tela
+        var corpo = window.document.body
+
+        // posso mudar a cor de fundo
+        corpo.style.background = 'gray'
+        
+        // crio uma var para a div com id msg e printo na tela
+        var d = window.document.getElementById('msg')
+        window.document.write(d.innerText + '</br>')
+        d.style.color = 'green' // muda a cor das letras
+        d.style.background = 'black' //muda a cor do fundo da div inteira
+        d.innerText = 'Mudei o conteúdo da div!'
+        window.document.getElementById('msg').innerText =  'Mudei com o comando inteiro!'
+
+        var titleP = window.document.getElementsByClassName('titulo')
+        window.document.write(titleP.innerText + '</br>')  // it doesn't work :/
+        
+        // pega por name
+        var pResult = window.document.getElementsByName('r')[0]
+        window.document.write(pResult.innerText + '</br>')
+
+        // pega por seletor
+        var q = window.document.querySelector('div#msg')
+        window.document.write(q.innerText + '</br>') 
+
+    </script>
+</body>
+</html>

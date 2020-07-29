@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gringos or not</title>
+    <style>
+        body {
+            background-color: darkorange;
+            color: rgb(119, 0, 255);
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ANÁLISE DE CIDADANIA</h1>
+    Em que pais você nasceu? <input type="text" name="txt1" id="txtpais">
+    <input type="button" value="Analisar" onclick="verification()">
+    <div id="resp"></div>
+
+    <script>
+        function verification() {
+            var box = window.document.getElementById('txtpais')
+            var resposta = window.document.getElementById('resp')
+            pais = box.value.toUpperCase()
+            resposta.innerHTML = `<p>Você nasceu no pais: <strong>${pais}</strong></p>`
+
+            if (pais != 'BRASIL') {
+                resposta.innerHTML += '<p>Você é gringo(a)!</p>'
+            } else {
+                resposta.innerHTML += '<p>Você é brasileiro(a)!</p>'
+            }
+        }
+
+    </script>
+</body>
+</html>

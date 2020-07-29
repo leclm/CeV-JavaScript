@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features with Names</title>
+    <style>
+        body {
+            font: 20pt normal;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(12, 59, 40);
+            background-color: rgb(236, 234, 217);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+        
+        document.writeln(`Olá <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.</br>`)
+        
+        document.writeln(`O seu nome em maiúsculas é: ${nome.toUpperCase()}</br>`)
+        
+        document.writeln('Até mais!</br></br>')
+        
+        var salario = Number(window.prompt('Qual seu salário?')).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        window.alert(`${nome}, seu salário em reais é: ${salario}`)
+        
+        var sal = 9345.5
+        document.write(`O salário do Eduardo em euro é: ${sal.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})}`)
+
+        
+
+    </script>
+</body>
+</html>

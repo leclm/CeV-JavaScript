@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multas</title>
+
+    <style>
+        body {
+            font: normal 20px Arial;
+            background-color: coral;
+        }
+        div#sit {
+            margin-top: 20pt;
+        }
+        input {
+            color: rgb(233, 35, 183);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do Carro: <input type="number" name="txtspeed" id="txtspeed">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="sit">Situação: </div>
+
+    <script>
+        function calcular() {
+            var box = window.document.getElementById('txtspeed')
+            var situação = window.document.querySelector('div#sit')
+            var speed = Number(box.value)
+            situação.innerHTML = `Sua velocidade é de <strong>${speed} km/h</strong>`
+            
+            if (speed > 60) {
+                situação.style.color = 'red'
+                situação.innerHTML += '<p>Você foi <strong>MULTADO</strong> por excesso de velocidade!</p>'
+            } else {
+                situação.style.color = 'green'
+                situação.innerHTML += '<p>Você dirige de acordo com as leis de trânsito!</p>'
+            }
+
+            situação.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>` // nesse caso estamos concatenando duas strings
+        }
+            
+    </script>
+    
+</body>
+</html>
