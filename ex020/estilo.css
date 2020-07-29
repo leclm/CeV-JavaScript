@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(116, 29, 94);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: rgb(253, 253, 253);
+    text-align: center;
+}
+
+section {
+    /* deixa o fundo da section branco */
+    background-color: rgb(161, 87, 139); 
+    
+    /* deixa as bordas arredondadas*/
+    border-radius: 10px;
+    
+    /* Altura da section */
+    padding: 15px;
+
+    /* largura da section */
+    width: 450px;    
+
+    /* deixa a section no meio da tela*/
+    margin: auto;
+
+    /* coloca sombra na section */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.527);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+div#resp {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(231, 198, 224);
+    border-radius: 10px;
+    padding: 5px;
+    width: 220px;
+    margin: auto;
+}
+
+div#dados {
+    color: white;
+    text-align: center;
+}
