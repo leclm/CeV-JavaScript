@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(52, 185, 174);
+    font: normal 15pt Arial;
+}
+
+header { /* Cor da letra do título */
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+section {
+    /* deixa o fundo da section branco */
+    background-color: white; /*#d5fffb*/
+    
+    /* deixa as bordas arredondadas*/
+    border-radius: 10px;
+    
+    /* Altura da section */
+    padding: 15px;
+
+    /* largura da section */
+    width: 500px;    
+
+    /* deixa a section no meio da tela*/
+    margin: auto;
+
+    /* coloca sombra na section */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.527);
+}
+
+div#img {
+    text-align: center;
+}
+
+footer {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-style: italic;
+}
