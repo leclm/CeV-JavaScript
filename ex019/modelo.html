@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.A.</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Progressão Aritmética</h1>
+    </header>
+    <section>
+        <div id="dados">
+            <p>
+                <label for="start">Início: </label>
+                <input type="number" name="start" id="start">
+            </p>
+            <p>
+                <label for="stop">Fim: </label>
+                <input type="number" name="stop" id="stop">
+            </p>
+            <p>
+                <label for="step">Passo: </label>
+                <input type="number" name="step" id="step">
+            </p>
+            <p>
+                <input type="button" value="Contar" onclick="contador()">
+            </p>
+        </div>
+        <div id="resultado">
+            Insira os dados para ver o resultado!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVídeo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

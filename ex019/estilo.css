@@ -1,0 +1,37 @@
+body {
+    background-color: #701d1d;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    /* deixa o fundo da section branco */
+    background-color: #f7e2e7; 
+    
+    /* deixa as bordas arredondadas*/
+    border-radius: 10px;
+    
+    /* Altura da section */
+    padding: 15px;
+
+    /* largura da section */
+    width: 410px;    
+
+    /* deixa a section no meio da tela*/
+    margin: auto;
+
+    color: rgb(0, 0, 0);
+
+    /* coloca sombra na section */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.527);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
